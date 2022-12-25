@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Aplikasyonu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <style media="screen">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#538CFE;
+    
+}
+
+    </style>
+    
+ 
+
+</head>
+<body>
+    <h1 id="Hava">Hava Durumu</h1>
+    <div class="container-fluid">
+
+
+
+            <section class="main">
+            <section class="inputs">
+                <input type="text" placeholder="Şehir Giriniz" id="cityinput">
+                <input type="submit" value="Tıkla" id="Ekle">
+            <button placeholder="submit" id="Ekle"></button>
+            </section>
+     
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+
+                </div>
+            </section>
+            </section>
+
+    </div>
+
+<script>
+function convertion(val){
+    return (val - 273).toFixed(2)
+}
+
+
+  
+</script>
+</body>
+</html>
+
+
+
